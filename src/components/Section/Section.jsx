@@ -1,5 +1,10 @@
-import { Wrapper } from './Section.styled';
+import { Wrapper, Title } from './Section.styled';
 
-export const Section = () => {
-  return <Wrapper />;
+export const Section = ({ title, children }) => {
+  return (
+    <Wrapper>
+      <Title>{title}</Title>
+      {children}
+    </Wrapper>
+  );
 };
